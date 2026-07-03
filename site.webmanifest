@@ -1,0 +1,19 @@
+{
+    "name": "Gerson Yax — CFO Externo",
+    "short_name": "Gerson CFO",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#0F2444",
+    "background_color": "#0F2444",
+    "display": "standalone"
+}
