@@ -374,6 +374,16 @@
     color: var(--color-gold-soft);
     border-bottom-color: rgba(250, 247, 242, 0.15);
   }
+  .servicio-list-label {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-navy);
+    margin-bottom: 14px;
+  }
+  .servicio-card.featured .servicio-list-label {
+    color: var(--color-cream);
+  }
   .servicio-list {
     list-style: none;
     margin-bottom: 32px;
@@ -537,9 +547,12 @@
 
   .proyectos-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
     margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .proyecto-card {
     background: rgba(250, 247, 242, 0.05);
@@ -717,15 +730,16 @@
   <div class="container">
     <div class="hero-grid">
       <div class="hero-text">
-        <span class="eyebrow">CFO Externo · Guatemala &amp; Centroamérica</span>
+        <span class="eyebrow">CLARIDAD FINANCIERA · GUATEMALA Y CENTROAMÉRICA</span>
         <h1>Dirección financiera externa para <em>empresas y cooperativas</em> en Guatemala.</h1>
         <p class="lead">Soy Gerson Yax, tu director financiero externo. Trabajo con empresas y cooperativas que ya tienen su contabilidad ordenada y necesitan el siguiente paso: convertir esos números en decisiones de crecimiento.</p>
         
         <div class="hero-cta">
           <a href="https://wa.me/50277662857?text=Hola%20Gerson%2C%20quiero%20agendar%20una%20llamada%20de%20claridad%20financiera" target="_blank" rel="noopener" class="btn btn-primary">
-            Agenda una llamada de claridad
+            Cuéntame tu caso
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
           </a>
+          <div class="cta-meta">20 minutos · Sin costo · Tú decides después</div>
         </div>
       </div>
       <div class="hero-photo">
@@ -754,7 +768,7 @@
       </div>
       <div class="quien-text">
         <p>Soy <strong>Gerson Yax</strong>, Licenciado en Administración de Empresas por la Universidad Rafael Landívar y certificado por <strong>INCAE Business School</strong> en Gestión de Operaciones y Estrategia.</p>
-        <p>Vengo del análisis de rentabilidad corporativa en <strong>Banco Industrial S.A.</strong>, donde gestioné el modelo de rentabilidad del grupo financiero — analizando productos, líneas de negocio y canales. Antes, en <strong>COSAMI R.L. Micoope</strong>, trabajé en la supervisión de carteras del sector cooperativo, con el objetivo de mejorar la calidad de la información y, por consecuencia, la calidad del análisis financiero.</p>
+        <p>Vengo del análisis de rentabilidad corporativa en <strong>Banco Industrial S.A.</strong>, donde validé y mejoré el modelo de rentabilidad del grupo financiero, analizando productos, líneas de negocio y canales. Antes, en <strong>COSAMI R.L. Micoope</strong>, trabajé en la gestión de carteras del sector cooperativo, depurando la información para mejorar la calidad del análisis financiero.</p>
         <p>Mi formación no se quedó en lo corporativo. En mis propios emprendimientos cada día me hacía preguntas financieras críticas que no tenía tiempo de responder porque estaba ocupado en que los negocios funcionaran. Ahí descubrí un dolor que pocos están atendiendo bien. Por eso hoy doy a otros dueños esas respuestas que entonces yo necesité, para que puedan volver a concentrarse en hacer crecer su negocio.</p>
         <p>Hoy traigo esa misma disciplina financiera al alcance de PYMEs, cooperativas y microfinancieras que no tienen un director financiero interno, pero merecen tomar decisiones con la misma claridad que una corporación grande.</p>
         <p class="brand-anchor">Dirección financiera externa: del dato al <em>criterio</em>, del <em>criterio</em> a la decisión.</p>
@@ -769,18 +783,18 @@
     <div class="section-header">
       <span class="eyebrow">02 — Audiencia</span>
       <h2>Para quién trabajo</h2>
-      <p>Empresas que ya tienen su contabilidad ordenada, pero cuya dirección sigue operando con intuición más que con estrategia.</p>
+      <p>Dueños y directivos que quieren decidir con números lo que hoy deciden con experiencia.</p>
     </div>
     <div class="audience-grid">
       <div class="audience-card">
         <div class="audience-num">01</div>
         <h3>PYMEs en crecimiento</h3>
-        <p>Negocios con su contabilidad al día, donde el dinero entra pero no rinde lo que debería. El dueño necesita visibilidad real de su rentabilidad para tomar la siguiente decisión grande.</p>
+        <p>Negocios con varios años operando y contabilidad al día, cuyo dueño quiere ver qué parte del negocio genera la rentabilidad antes de su siguiente decisión grande.</p>
       </div>
       <div class="audience-card">
         <div class="audience-num">02</div>
         <h3>Cooperativas de ahorro y crédito</h3>
-        <p>COACs que necesitan análisis de cartera con criterio de riesgo y creación de valor, no solo cumplimiento operativo.</p>
+        <p>Cooperativas que quieren leer su cartera con criterio de riesgo y de creación de valor para sus asociados.</p>
       </div>
       <div class="audience-card">
         <div class="audience-num">03</div>
@@ -807,18 +821,17 @@
       <div class="servicio-card featured">
         <span class="servicio-tag">Servicio de entrada</span>
         <h3>Diagnóstico de Claridad Financiera</h3>
-        <p class="servicio-desc">Descubre si tu empresa está creciendo o solo generando movimiento. Radiografía financiera completa en 5 días hábiles.</p>
-        <p class="servicio-target">Para quién: dueños de empresa y directivos que sienten que algo no cuadra en sus números pero no saben exactamente dónde está el problema.</p>
+        <p class="servicio-desc">Para empresas que ya venden bien y quieren saber qué producto, cliente o línea les deja más dinero. En 5 días hábiles traduzco tus números a una respuesta clara: dónde está tu rentabilidad, a dónde se va el efectivo y por dónde conviene empezar.</p>
+        <p class="servicio-target">Para quién: empresas con varios años operando, equipo y contabilidad al día.</p>
+        <p class="servicio-list-label">Respondemos preguntas como:</p>
         <ul class="servicio-list">
-          <li>Rentabilidad por producto o línea</li>
-          <li>Fugas de dinero y riesgos críticos</li>
-          <li>3 a 5 acciones prioritarias</li>
-          <li>Informe ejecutivo en PDF</li>
-          <li>Sesión de resultados de 60 min</li>
+          <li>¿Qué línea gana más y cuál solo mueve volumen?</li>
+          <li>¿Estoy construyendo valor o solo movimiento?</li>
+          <li>¿Cuál es la primera decisión que debo tomar?</li>
         </ul>
         <div class="servicio-cta">
-          <a href="https://wa.me/50277662857?text=Hola%20Gerson%2C%20quiero%20cotizar%20el%20Diagn%C3%B3stico%20de%20Claridad%20Financiera%20sin%20compromiso" target="_blank" rel="noopener" class="btn btn-light">
-            Cotizar sin compromiso
+          <a href="https://wa.me/50277662857?text=Hola%20Gerson%2C%20quiero%20platicar%20sobre%20el%20Diagn%C3%B3stico%20de%20Claridad%20Financiera%20y%20ajustar%20el%20alcance" target="_blank" rel="noopener" class="btn btn-light">
+            Ajustemos el alcance sin costo
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
           </a>
         </div>
@@ -828,17 +841,17 @@
       <div class="servicio-card">
         <span class="servicio-tag">Servicio recurrente</span>
         <h3>Dirección Financiera Externa</h3>
-        <p class="servicio-desc">Acompañamiento continuo para que tomes decisiones todos los meses con criterio de director financiero, sin contratar un director financiero de planta.</p>
-        <p class="servicio-target">Para quién: empresas y cooperativas que ya superaron la contabilidad básica y necesitan criterio financiero disponible de forma continua, sin el costo de un director financiero de tiempo completo.</p>
+        <p class="servicio-desc">Un director financiero dedicado a tu negocio cada mes, sin sumar una plaza fija a tu planilla.</p>
+        <p class="servicio-target">Para quién: empresas y cooperativas que ya pasaron la etapa de solo llevar la contabilidad al día y quieren a alguien que piense el negocio con ellas.</p>
+        <p class="servicio-list-label">Respondemos preguntas como:</p>
         <ul class="servicio-list">
-          <li>Tablero mensual de indicadores clave</li>
-          <li>Revisión de resultados y rentabilidad</li>
-          <li>Apoyo en pricing, cartera e inversión</li>
-          <li>Sesión mensual de estrategia</li>
+          <li>¿Este precio me deja margen o solo me deja vender?</li>
+          <li>¿Me alcanza el efectivo para esta inversión?</li>
+          <li>¿A qué clientes me conviene darles crédito?</li>
         </ul>
         <div class="servicio-cta">
-          <a href="https://wa.me/50277662857?text=Hola%20Gerson%2C%20me%20interesa%20la%20Direcci%C3%B3n%20Financiera%20Externa%2C%20quisiera%20cotizar%20sin%20compromiso" target="_blank" rel="noopener" class="btn btn-secondary">
-            Cotizar sin compromiso
+          <a href="https://wa.me/50277662857?text=Hola%20Gerson%2C%20me%20interesa%20la%20Direcci%C3%B3n%20Financiera%20Externa%2C%20quisiera%20platicar%20para%20ajustar%20el%20alcance" target="_blank" rel="noopener" class="btn btn-secondary">
+            Ajustemos el alcance sin costo
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
           </a>
         </div>
@@ -853,17 +866,17 @@
       <div class="servicio-card">
         <span class="servicio-tag">Proyecto específico</span>
         <h3>Proyecciones y Presupuesto</h3>
-        <p class="servicio-desc">Entra al próximo año sabiendo cuánto vas a necesitar y si tus recursos van a alcanzar.</p>
-        <p class="servicio-target">Para quién: empresas en crecimiento y cooperativas que necesitan planificar el siguiente período con números confiables — para tomar decisiones, presentar a su directiva o negociar con su banco.</p>
+        <p class="servicio-desc">Llega a enero con tu efectivo proyectado mes a mes y un plan para cada escenario de ventas.</p>
+        <p class="servicio-target">Para quién: empresas y cooperativas que quieren que cada inversión o gasto del próximo año tenga respaldo, para decidir, presentar ante su junta directiva o Consejo de Administración, o negociar con su banco.</p>
+        <p class="servicio-list-label">Respondemos preguntas como:</p>
         <ul class="servicio-list">
-          <li>Proyección de flujo de caja</li>
-          <li>Análisis de escenarios financieros</li>
-          <li>Presupuesto operativo por área</li>
-          <li>Presentación ejecutiva de resultados</li>
+          <li>¿Cuánto puedo invertir sin apretar la caja?</li>
+          <li>¿Qué meses vienen con más presión de efectivo?</li>
+          <li>¿Qué hago si las ventas se mueven más de lo previsto?</li>
         </ul>
         <div class="servicio-cta">
-          <a href="https://wa.me/50277662857?text=Hola%20Gerson%2C%20quiero%20cotizar%20Proyecciones%20y%20Presupuesto%20sin%20compromiso" target="_blank" rel="noopener" class="btn btn-secondary">
-            Cotizar sin compromiso
+          <a href="https://wa.me/50277662857?text=Hola%20Gerson%2C%20quiero%20platicar%20sobre%20Proyecciones%20y%20Presupuesto%20y%20ajustar%20el%20alcance" target="_blank" rel="noopener" class="btn btn-secondary">
+            Ajustemos el alcance sin costo
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
           </a>
         </div>
@@ -873,17 +886,17 @@
       <div class="servicio-card">
         <span class="servicio-tag">Proyecto específico</span>
         <h3>Preparación para Financiamiento</h3>
-        <p class="servicio-desc">Tu empresa ya tiene la capacidad operativa y financiera. Accede a productos financieros acordes a esa madurez, con el respaldo técnico que la demuestra.</p>
-        <p class="servicio-target">Para quién: PYMEs y cooperativas que buscan financiamiento en una institución bancaria y necesitan presentar un expediente financiero sólido y bien estructurado.</p>
+        <p class="servicio-desc">Tu empresa ya tiene la capacidad operativa y financiera. Falta documentarla en el lenguaje del banco o la cooperativa.</p>
+        <p class="servicio-target">Para quién: empresas que van a solicitar crédito, ampliar una línea o presentarse ante un inversionista en los próximos meses.</p>
+        <p class="servicio-list-label">Respondemos preguntas como:</p>
         <ul class="servicio-list">
-          <li>Tu información financiera traducida al lenguaje que el banco evalúa</li>
-          <li>Proyección de pago que confirma tu capacidad real, no la supone</li>
-          <li>Análisis de endeudamiento con base en tu historial, no en promedios genéricos</li>
-          <li>Acompañamiento en la presentación ante banco o inversionista</li>
+          <li>¿Qué tamaño de crédito corresponde a lo que mi empresa ya genera?</li>
+          <li>¿Cómo muestro con mis números la capacidad que ya tengo?</li>
+          <li>¿Qué producto financiero va con la madurez de mi operación?</li>
         </ul>
         <div class="servicio-cta">
-          <a href="https://wa.me/50277662857?text=Hola%20Gerson%2C%20quiero%20cotizar%20Preparaci%C3%B3n%20para%20Financiamiento%20sin%20compromiso" target="_blank" rel="noopener" class="btn btn-secondary">
-            Cotizar sin compromiso
+          <a href="https://wa.me/50277662857?text=Hola%20Gerson%2C%20quiero%20platicar%20sobre%20Preparaci%C3%B3n%20para%20Financiamiento%20y%20ajustar%20el%20alcance" target="_blank" rel="noopener" class="btn btn-secondary">
+            Ajustemos el alcance sin costo
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
           </a>
         </div>
@@ -892,18 +905,19 @@
       <!-- Card 5 — Análisis de Cartera -->
       <div class="servicio-card">
         <span class="servicio-tag">Sector financiero</span>
-        <h3>Análisis de Cartera</h3>
-        <p class="servicio-desc">Toma decisiones de cartera con datos, no con percepción. Sabes qué tan sana está y dónde están tus próximas oportunidades de crecimiento.</p>
-        <p class="servicio-target">Para quién: cooperativas de ahorro y crédito y microfinancieras que necesitan visibilidad real sobre el desempeño de su cartera y gestionar el riesgo con datos concretos.</p>
+        <h3>Análisis de Cartera de Crédito</h3>
+        <p class="servicio-desc">Conoce tu cartera a fondo: qué tan sana está, qué podrías recuperar y en qué segmentos conviene colocar más.</p>
+        <p class="servicio-desc">Desarmo tu cartera por segmento, producto y agencia. Estimo la pérdida esperada con tus datos, además de la provisión regulatoria, y proyecto escenarios de recuperación según las acciones que decidas tomar.</p>
+        <p class="servicio-target">Para quién: cooperativas de ahorro y crédito, microfinancieras y empresas que venden al crédito.</p>
+        <p class="servicio-list-label">Respondemos preguntas como:</p>
         <ul class="servicio-list">
-          <li>Radiografía completa de la estructura y calidad de tu cartera</li>
-          <li>Segmentos y productos con mayor potencial de rentabilidad</li>
-          <li>Pérdida esperada calculada, no solo estimaciones o provisiones</li>
-          <li>Criterios claros para el otorgamiento y administración de crédito</li>
+          <li>¿Qué segmentos nos dejan mejor rendimiento por el riesgo que asumimos?</li>
+          <li>¿Hasta qué nivel de pérdida esperada podemos crecer sin comprometer la solvencia?</li>
+          <li>¿Qué criterios de otorgamiento conviene llevar al Comité de Crédito?</li>
         </ul>
         <div class="servicio-cta">
-          <a href="https://wa.me/50277662857?text=Hola%20Gerson%2C%20quiero%20cotizar%20An%C3%A1lisis%20de%20Cartera%20sin%20compromiso" target="_blank" rel="noopener" class="btn btn-secondary">
-            Cotizar sin compromiso
+          <a href="https://wa.me/50277662857?text=Hola%20Gerson%2C%20quiero%20platicar%20sobre%20el%20An%C3%A1lisis%20de%20Cartera%20de%20Cr%C3%A9dito%20y%20ajustar%20el%20alcance" target="_blank" rel="noopener" class="btn btn-secondary">
+            Ajustemos el alcance sin costo
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
           </a>
         </div>
@@ -924,8 +938,8 @@
     <div class="proceso-grid">
       <div class="proceso-step">
         <span class="proceso-num">01</span>
-        <h3>Llamada de claridad — 20 min</h3>
-        <p>Conversamos sobre tu negocio, tus dolores financieros principales y validamos si soy la persona indicada. Sin compromiso.</p>
+        <h3>Llamada de claridad (20 min)</h3>
+        <p>Me cuentas tu caso, vemos si puedo ayudarte y ajustamos juntos el alcance antes de cotizar. Sin costo.</p>
       </div>
       <div class="proceso-step">
         <span class="proceso-num">02</span>
@@ -939,8 +953,8 @@
       </div>
       <div class="proceso-step">
         <span class="proceso-num">04</span>
-        <h3>Sesión de resultados</h3>
-        <p>Te entrego claridad y un plan concreto. Sales con criterio para tomar decisiones, no con un informe más.</p>
+        <h3>Entrega de resultados</h3>
+        <p>Te entrego la lectura de tus números y por dónde empezar. Sales con criterio para decidir, no con un informe más.</p>
       </div>
     </div>
   </div>
@@ -958,28 +972,28 @@
         <div class="por-que-icon">i</div>
         <div class="por-que-text">
           <h3>Experiencia corporativa aplicada a PYME</h3>
-          <p>Rigor corporativo, a tu escala. Analicé el modelo de rentabilidad de uno de los grupos financieros más grandes de Centroamérica. Hoy aplico esa misma disciplina a tu negocio — sin que tengas que ser una corporación para merecerla.</p>
+          <p>Rigor corporativo, a tu escala. Validé y mejoré el modelo de rentabilidad de uno de los grupos financieros más grandes de Centroamérica. Hoy aplico esa misma disciplina a tu negocio, sin que tengas que ser una corporación para merecerla.</p>
         </div>
       </div>
       <div class="por-que-item">
         <div class="por-que-icon">ii</div>
         <div class="por-que-text">
           <h3>Trayectoria verificable</h3>
-          <p>Banco Industrial, COSAMI Micoope, INCAE Business School y proyectos en colaboración con SFG Consultores. No vengo a improvisar.</p>
+          <p>Banco Industrial, COSAMI Micoope, INCAE Business School y proyectos en colaboración con SFG Consultores. Cada credencial se puede verificar.</p>
         </div>
       </div>
       <div class="por-que-item">
         <div class="por-que-icon">iii</div>
         <div class="por-que-text">
           <h3>Lenguaje claro, sin jerga</h3>
-          <p>Traduzco estados financieros a decisiones concretas. No te abrumo con tecnicismos — te dejo viendo con claridad.</p>
+          <p>Traduzco estados financieros a decisiones concretas. Sin tecnicismos: sales viendo tu negocio con claridad.</p>
         </div>
       </div>
       <div class="por-que-item">
         <div class="por-que-icon">iv</div>
         <div class="por-que-text">
           <h3>Cercanía real</h3>
-          <p>Trabajas directamente conmigo — no con un equipo rotativo ni un correo genérico. En tu terreno, con foco en tus resultados.</p>
+          <p>Trabajas directamente conmigo, no con un equipo rotativo. Entro a tu operación y mi foco son tus resultados.</p>
         </div>
       </div>
     </div>
@@ -996,19 +1010,27 @@
     <div class="faq-list">
       <div class="faq-item">
         <h3>¿Qué es un CFO, CFO Externo o CFO Fraccional?</h3>
-        <p>CFO son las siglas de Chief Financial Officer, o director financiero: el rol responsable de la salud financiera de una empresa, más allá de la contabilidad — flujo de caja, rentabilidad, estructura de costos y decisiones de crecimiento. Un CFO Externo (o CFO Fraccional, su nombre en el mercado internacional) es ese mismo rol prestado de forma flexible: experiencia financiera de alto nivel, disponible cuando tu empresa la necesita, sin el costo de una posición de tiempo completo. Es el servicio que ofrezco como director financiero externo.</p>
+        <p>CFO son las siglas de Chief Financial Officer, o director financiero: el rol responsable de la salud financiera de una empresa, más allá de la contabilidad: flujo de caja, rentabilidad, estructura de costos y decisiones de crecimiento. Un CFO Externo (o CFO Fraccional, su nombre en el mercado internacional) es ese mismo rol prestado de forma flexible: experiencia financiera de alto nivel, disponible cuando tu empresa la necesita, sin el costo de una posición de tiempo completo. Es el servicio que ofrezco como director financiero externo.</p>
       </div>
       <div class="faq-item">
         <h3>¿Qué es un servicio de Dirección Financiera Externa?</h3>
-        <p>La tecnología ha cerrado una brecha que antes era enorme: hoy una PYME o una cooperativa puede analizar su información con el mismo rigor que una corporación grande. Pero el dato solo, sin quien entienda la operación detrás de él, no resuelve nada — hay que meterse al proceso comercial, entender de dónde viene cada número y qué lo mueve. Eso es la Dirección Financiera Externa: dirección instalada en tu empresa, con esa mirada operativa, para responder a los retos del negocio a tiempo — sin necesidad de contratarla de planta.</p>
+        <p>La tecnología ha cerrado una brecha que antes era enorme: hoy una PYME o una cooperativa puede analizar su información con el mismo rigor que una corporación grande. Pero el dato solo, sin quien entienda la operación detrás de él, no resuelve nada: hay que meterse al proceso comercial, entender de dónde viene cada número y qué lo mueve. Eso es la Dirección Financiera Externa: dirección instalada en tu empresa, con esa mirada operativa, para responder a los retos del negocio a tiempo, sin necesidad de contratarla de planta.</p>
       </div>
       <div class="faq-item">
         <h3>¿Cómo se acopla tu dirección externa con mi contador o mi equipo contable actual?</h3>
-        <p>Son roles complementarios, no compiten. Tu contador o equipo contable se encarga de que tus números estén ordenados y al día: registros, cumplimiento, estados financieros. Mi trabajo empieza donde termina el suyo — tomar esos números y convertirlos en decisiones: dónde está la rentabilidad real, qué mueve tu flujo de caja, hacia dónde dirigir el crecimiento. Trabajo junto a tu equipo contable, no en su lugar.</p>
+        <p>Son roles complementarios, no compiten. Tu contador o equipo contable se encarga de que tus números estén ordenados y al día: registros, cumplimiento, estados financieros. Mi trabajo empieza donde termina el suyo: tomar esos números y convertirlos en decisiones: dónde está la rentabilidad real, qué mueve tu flujo de caja, hacia dónde dirigir el crecimiento. Trabajo junto a tu equipo contable, no en su lugar.</p>
       </div>
       <div class="faq-item">
         <h3>¿Cómo se maneja la confidencialidad de mis datos?</h3>
         <p>Antes de acceder a tus estados financieros o cualquier información sensible de tu empresa, firmamos un acuerdo de confidencialidad. Tus datos se usan únicamente para el trabajo acordado contigo.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Qué pasa en la llamada de 20 minutos?</h3>
+        <p>Me cuentas tu caso, te digo con honestidad si puedo ayudarte y, si tiene sentido, ajustamos juntos el alcance antes de enviarte una cotización. No hay compromiso.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Trabajas con empresas que están empezando?</h3>
+        <p>Mi trabajo rinde más en empresas con operación en marcha, equipo y contabilidad al día. Si tu proyecto está arrancando, con gusto te oriento sobre qué ordenar primero.</p>
       </div>
     </div>
   </div>
@@ -1024,22 +1046,15 @@
     </div>
     <div class="proyectos-grid">
       <div class="proyecto-card">
-        <div class="proyecto-count">02</div>
         <div class="proyecto-name">Cooperativas de ahorro y crédito</div>
         <div class="proyecto-sector">Sector financiero solidario</div>
       </div>
       <div class="proyecto-card">
-        <div class="proyecto-count">01</div>
         <div class="proyecto-name">Exportadora de café</div>
         <div class="proyecto-sector">Agroindustria</div>
       </div>
-      <div class="proyecto-card">
-        <div class="proyecto-count">01</div>
-        <div class="proyecto-name">Institución de microfinanzas</div>
-        <div class="proyecto-sector">Servicios financieros inclusivos</div>
-      </div>
     </div>
-    <p class="proyectos-note">Proyectos desarrollados en colaboración con SFG Consultores — sfgconsultores.com</p>
+    <p class="proyectos-note">Proyectos desarrollados en colaboración con SFG Consultores (sfgconsultores.com).</p>
 
     <div class="sectores-block">
       <div class="sectores-label">Sectores que conozco desde adentro</div>
@@ -1057,7 +1072,7 @@
     <h2>Cada empresa merece <em>claridad financiera</em>.</h2>
     <p>Si sientes que tu negocio puede más, pero los números no te dejan ver el camino, no tienes que resolverlo solo.</p>
     <a href="https://wa.me/50277662857?text=Hola%20Gerson%2C%20quiero%20agendar%20una%20llamada%20de%20claridad%20financiera" target="_blank" rel="noopener" class="btn btn-primary">
-      Agendar llamada por WhatsApp
+      Cuéntame tu caso
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
     </a>
     <div class="cta-meta">20 minutos · Sin costo · Tú decides después</div>
